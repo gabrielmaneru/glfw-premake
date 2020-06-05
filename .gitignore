@@ -91,6 +91,5 @@ tests/title
 tests/triangle-vulkan
 tests/windows
 
-# Hazel-specific
 bin
-bin-int
+bin-obj
