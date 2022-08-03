@@ -1,9 +1,9 @@
-project "GLFW"
+project "glfw"
 	kind "StaticLib"
 	language "C"
 
-	targetdir ("build-bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("build-obj/" .. outputdir .. "/%{prj.name}")
+	targetdir ("build/" .. outputdir .. "/%{prj.name}/bin")
+	objdir ("build/" .. outputdir .. "/%{prj.name}/obj")
 
 	files
 	{
@@ -65,10 +65,10 @@ project "GLFW"
 			"_CRT_SECURE_NO_WARNINGS"
 		}
 
-	filter "configurations:Debug"
+	filter "configurations:debug"
 		runtime "Debug"
 		symbols "on"
 
-	filter "configurations:Release"
+	filter "configurations:release"
 		runtime "Release"
 		optimize "on"
