@@ -8,6 +8,8 @@ project "glfw"
 
 	files
 	{
+		"include/**.h",
+		"src/**.h",
 		"src/**.c"
 	}
 
